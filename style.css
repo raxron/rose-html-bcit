@@ -115,7 +115,8 @@ body {
 .shop-dropdown:hover .shop-content,
 .special-dropdown:hover .special-content,
 .about-dropdown:hover .about-content,
- .support-dropdown:hover .support-content {
+ .support-dropdown:hover .support-content,
+ .search-dropdown:hover .search-content {
     display: block;
 }
 
@@ -133,6 +134,7 @@ label:hover,
 .support-column:hover{
     font-weight: bold;
 }
+/*search bar and search icon*/
 .searchIcon{
     position: relative;
 }
@@ -146,3 +148,44 @@ label:hover,
 .searchIcon:hover .search-hover{
     opacity: 1;
 }
+
+.search-content{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 5% 0;
+    background-color: #FFFBF1
+}
+.search-bar{
+   background-color: #2E493A;
+opacity: 0.3;
+border-radius: 40px;
+padding: 0;
+width: 80%;
+margin-left:10% ;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.search-bar input{
+    background-color:transparent;
+    width: 90%;
+    border: 0;
+    outline: none;
+    padding: 20px 10px;
+    font-size: 16px;
+    color: #FFFBF1;
+}
+::placeholder{
+    color: #FFFBF1;
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+height: 40px;
+    background-color: #FFFBF1;
+    opacity: 0.7;
+cursor: pointer;}
