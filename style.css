@@ -3,13 +3,14 @@ body {
     width: 100%;
     margin: 0 10px 10px 0;
 }
-/*navigation*/
+
+/*Sign Up Bar*/
 .preheader {
     align-items: center;
     display: flex;
     background-color: black;
     opacity: 0.5;
-    height: 20px;
+    height: 25px;
     font-size: 16px;
     color: #FFFBF1;
     justify-content: center;
@@ -22,6 +23,7 @@ body {
     right: 10px;
 }
 
+/*navigation*/
 .navBar {
     background-color: #FFFBF1;
     align-items: center;
@@ -30,6 +32,7 @@ body {
     width: 100%;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .navLeft {
@@ -60,7 +63,8 @@ body {
     padding-top: 30px;
     font-size: 16px;
 }
-.navRight a{
+
+.navRight a {
     color: black;
     text-decoration: none;
 }
@@ -101,7 +105,7 @@ body {
 .shop-column a,
 .special-column a,
 .about-column a,
- .support-column a {
+.support-column a {
     float: none;
     text-decoration: none;
     display: block;
@@ -115,8 +119,8 @@ body {
 .shop-dropdown:hover .shop-content,
 .special-dropdown:hover .special-content,
 .about-dropdown:hover .about-content,
- .support-dropdown:hover .support-content,
- .search-dropdown:hover .search-content {
+.support-dropdown:hover .support-content,
+.search-dropdown:hover .search-content {
     display: block;
 }
 
@@ -128,28 +132,33 @@ label:hover,
 .navRight a:hover {
     text-decoration: underline 1px;
 }
+
 .shop-column:hover,
 .special-column:hover,
 .about-column:hover,
-.support-column:hover{
+.support-column:hover {
     font-weight: bold;
 }
+
 /*search bar and search icon*/
-.searchIcon{
+.searchIcon {
     position: relative;
 }
-.search-hover{
+
+.search-hover {
     position: absolute;
     top: 0;
     left: 0;
-    opacity:0;
+    opacity: 0;
     transition: .3s ease;
 }
-.searchIcon:hover .search-hover{
+
+.searchIcon:hover .search-hover,
+.search-dropdown:hover .search-hover {
     opacity: 1;
 }
 
-.search-content{
+.search-content {
     display: none;
     position: absolute;
     width: 100%;
@@ -157,19 +166,21 @@ label:hover,
     padding: 5% 0;
     background-color: #FFFBF1
 }
-.search-bar{
-   background-color: #2E493A;
-opacity: 0.3;
-border-radius: 40px;
-padding: 0;
-width: 80%;
-margin-left:10% ;
-display: flex;
-align-items: center;
-justify-content: center;
+
+.search-bar {
+    background-color: #2E493A;
+    opacity: 0.3;
+    border-radius: 40px;
+    padding: 0;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.search-bar input{
-    background-color:transparent;
+
+.search-bar input {
+    background-color: transparent;
     width: 90%;
     border: 0;
     outline: none;
@@ -177,15 +188,17 @@ justify-content: center;
     font-size: 16px;
     color: #FFFBF1;
 }
-::placeholder{
+
+::placeholder {
     color: #FFFBF1;
 }
 
-.search-bar button{
+.search-bar button {
     border: 0;
     border-radius: 50%;
     width: 40px;
-height: 40px;
+    height: 40px;
     background-color: #FFFBF1;
     opacity: 0.7;
-cursor: pointer;}
+    cursor: pointer;
+}
