@@ -257,3 +257,15 @@ label:hover,
     opacity: 0.7;
     cursor: pointer;
 }
+
+.main-image{
+    width: 100%;
+    height: auto;
+}
+
+.title01{
+    color: white;
+    position: absolute;
+    right : 40px;
+    top: 500px;
+}
