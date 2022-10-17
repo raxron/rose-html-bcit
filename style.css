@@ -9,8 +9,8 @@ body {
 .preheader {
     align-items: center;
     display: flex;
-    background-color: black;
-    opacity: 0.5;
+    background-color: rgb(46, 73, 58);
+    opacity: 0.9;
     height: 25px;
     font-size: 16px;
     color: #FFFBF1;
