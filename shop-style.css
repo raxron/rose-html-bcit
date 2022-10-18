@@ -2,14 +2,14 @@ html,
 body {
     width: 100%;
     margin: 0 10px 10px 0;
-    scroll-padding-top: 200px;
+    scroll-padding-top: 180px;
+    background-color:#fbf9f5 ;
 }
 /*Sign Up Bar*/
 .preheader {
     align-items: center;
     display: flex;
-    background-color: black;
-    opacity: 0.5;
+    background-color: #2E493A;
     height: 25px;
     font-size: 16px;
     color: #FFFBF1;
@@ -337,12 +337,14 @@ hr {
 
 /*best seller*/
 .bestseller-container,
-.promotion-container {
+.candle-container {
     display: flex;
     align-items: center;
     justify-items: center;
     flex-direction: column;
     gap: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .bestseller-column {
@@ -393,12 +395,13 @@ hr {
 
 .nav-bestseller a:hover {
     opacity: 1;
+
 }
 
 .bestseller-label,
 .bestseller-price,
-.promotion-label,
-.promotion-price {
+.candle-label,
+.candle-price {
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -411,7 +414,7 @@ hr {
 }
 
 .bestseller-label:hover,
-.promotion-label:hover {
+.candle-label:hover {
     text-decoration: underline;
 }
 
@@ -420,16 +423,16 @@ hr {
 }
 
 .bestseller-column img:hover,
-.promotion-column img:hover {
+.candle-column img:hover {
     box-shadow: 5px 5px 5px gray;
     opacity: 1;
 }
 
-.promotion-container a {
+.candle-container a {
     text-decoration: none;
 }
 
-.promotion {
+.candle {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -437,15 +440,19 @@ hr {
     gap: 25px;
 }
 
-.promotion-column {
+.candle-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-
-.promotion-price {
+.candle-link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.candle-price {
     display: flex;
     gap: 5px;
 }
@@ -455,17 +462,114 @@ hr {
 .cross-price{
     text-decoration: line-through;
 }
-.promotion-column button{
+.promotion-ad button,
+.candle-column button{
     width: 100px;
-    height: 20px;
-    border-radius: 10px;
-    border: none;
-    background-color:bisque;
+    height: 25px;
+    border: 1px solid #2E493A;
+    background-color:#fbf9f5;
 }
-.promotion-column button a {
+.promotion-ad button a,
+.candle-column button a {
     font-size: 14px;
     color: #2E493A;
 }
-.promotion-column button:hover{
-    box-shadow: 0 2px 2px 2px #8f744c;
+.promotion-ad button:hover,
+.candle-column button:hover {
+    background-color: #2E493A;
+    color:#FFFBF1;
+}
+.promotion-ad button a:hover,
+.candle-column button a:hover,
+.candle-column button:hover>a{
+    color:#FFFBF1;
+}
+.promotion{
+    position: relative;
+}
+.promotion-column1,
+.promotion-column2,
+.promotion-column3,
+.promotion-column4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.promotion-ad a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #2E493A;
+}
+.promotion-ad{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 15px;
+}
+.promotion-price{
+    display: flex;
+    gap: 5px;
+    font-size: 16px;
+}
+.promotion-desc{
+    width: 300px;
+    font-size: 14px;
+}
+
+.promotion-ad button a{
+    font-size: 14px;
+}
+.promotion{
+    animation: 4s promotion-easeout infinite;
+}
+.promotion-column1{
+    visibility: hidden;
+    animation: 16s promotion-autoplay infinite;
+}
+.promotion-column2,
+.promotion-column3,
+.promotion-column4{
+    visibility: hidden;
+    position: absolute;
+    top:0;
+    left: 0;
+    margin: 0;
+    animation: 16s promotion-autoplay infinite;
+}
+
+@keyframes promotion-autoplay{
+    0%{visibility: visible;}
+    25%{visibility: hidden;}
+}
+.promotion-column1{animation-delay: 0s;}
+.promotion-column2{animation-delay: 4s;}
+.promotion-column3{animation-delay: 8s;}
+.promotion-column4{animation-delay: 12s;}
+
+@keyframes promotion-easeout{
+    0%{opacity: 0;}
+    2.5%{opacity: 0.1;}
+    5%{opacity: 0.2;}
+    7.5%{opacity: 0.3;}
+    10%{opacity:0.4;}
+    12.5%{opacity: 0.5;}
+    15%{opacity: 0.6;}
+    17.5%{opacity: 0.7;}
+    20%{opacity: 0.8;}
+    22.5%{opacity: 0.9;}
+    25%{opacity: 1;}
+    77.5%{opacity:1;}
+    80%{opacity: 0.9;}
+    82.5%{opacity:0.8;}
+    85%{opacity: 0.7;}
+    87.5%{opacity: 0.6;}
+    90%{opacity: 0.5;}
+    92.5%{opacity: 0.4;}
+    95%{opacity: 0.3;}
+    97.5%{opacity: 0.2;}
+    100%{opacity: 0.1;}
 }
