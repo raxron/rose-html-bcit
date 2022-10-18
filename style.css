@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock:ital,wght@1,700;1,900&family=PT+Serif:ital@0;1&display=swap');
 html,
 body {
     width: 100%;
@@ -41,6 +42,7 @@ h1 a{
     color: black;
 }
 .navLeft {
+    font-family: 'PT Serif', serif;
     flex: 1;
     width: auto;
     display: flex;
@@ -52,6 +54,7 @@ h1 a{
 }
 
 .navMid {
+    font-family: 'Overlock', cursive;
     flex: 1;
     width: auto;
     display: flex;
@@ -60,6 +63,7 @@ h1 a{
 }
 
 .navRight {
+    font-family: 'PT Serif', serif;
     display: flex;
     width: auto;
     align-items: flex-end;
