@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Overlock:ital,wght@1,700;1,900&family=PT+Serif:ital@0;1&display=swap');
+
 html,
 body {
     width: 100%;
     margin: 0 10px 10px 0;
     scroll-padding-top: 210px;
 }
+
 /*Sign Up Bar*/
 .preheader {
     align-items: center;
@@ -49,13 +51,15 @@ body {
     font-size: 14px;
     color: black;
 }
-.navMid{
+
+.navMid {
     flex: 1;
     width: auto;
     display: flex;
     align-items: center;
 }
-.navMid a{
+
+.navMid a {
     flex: 1;
     width: auto;
     display: flex;
@@ -93,14 +97,16 @@ body {
     overflow: hidden;
 
 }
-.user-dropdown{
-    float:right;
+
+.user-dropdown {
+    float: right;
     overflow: hidden;
 }
+
 .shop-content,
 .special-content,
 .about-content,
-.support-content{
+.support-content {
     display: none;
     position: absolute;
     background-color: #FFFBF1;
@@ -109,7 +115,8 @@ body {
     z-index: 1;
 
 }
-.user-content{
+
+.user-content {
     display: none;
     position: absolute;
     background-color: #FFFBF1;
@@ -117,9 +124,10 @@ body {
     right: 0;
     z-index: 1;
 }
+
 /*user login form*/
 
-.user-content form{
+.user-content form {
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -127,22 +135,26 @@ body {
     margin-top: 20px;
     gap: 5px;
 }
-.user-content input::placeholder{
+
+.user-content input::placeholder {
     font-family: 'PT Serif', serif;
     color: #2E493A;
     font: 14px;
 }
-.user-content input[type=text]{
+
+.user-content input[type=text] {
     font-family: 'PT Serif', serif;
     padding: 5px;
     color: #2E493A;
 }
-.user-content input[type=password]{
+
+.user-content input[type=password] {
     font-family: 'PT Serif', serif;
     padding: 5px;
     margin-bottom: 10px;
 }
-.user-content input[type=submit]{
+
+.user-content input[type=submit] {
     width: 100%;
     height: 20px;
     border: none;
@@ -154,12 +166,14 @@ body {
     font-size: 14px;
     cursor: pointer;
 }
-.user-term{
+
+.user-term {
     font-family: 'PT Serif', serif;
     font-size: 12px;
     margin-left: 40px;
     margin-right: 40px;
 }
+
 /**/
 .shop-column,
 .special-column,
@@ -209,6 +223,7 @@ label:hover,
 .special-column:hover,
 .about-column:hover,
 .support-column:hover {
+    text-decoration: underline 1px;
     font-weight: bold;
 }
 
@@ -281,10 +296,16 @@ label:hover,
 .nav-title {
     display: inline-flex;
     width: 100%;
-    padding: 10px 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     gap: 20px;
-    background-color:#FFFBF1;
+    background-color: #FFFBF1;
     border: 1px solid #e6e3de;
+}
+
+.nav-title nav {
+    margin-left: 50px;
 }
 
 .nav-title a {
@@ -314,9 +335,11 @@ label:hover,
     gap: 50px;
     padding: 50px;
 }
+
 .content img {
     border-radius: 20px;
 }
+
 hr {
     width: 1000px;
     height: 1px;
@@ -326,15 +349,17 @@ hr {
 }
 
 /* content titles and buttons on top of each section */
-.topBar-promotion{
+.topBar-promotion {
     position: inherit;
     padding-bottom: 50px;
 }
-.topBar{
+
+.topBar {
     position: inherit;
     padding-bottom: 50px;
     padding-top: 50px;
 }
+
 .topBar-promotion button,
 .topBar button {
     background-color: #2E493A;
@@ -342,8 +367,9 @@ hr {
     width: 80px;
     height: 30px;
     border-radius: 5px;
-    float:right
+    float: right
 }
+
 .topBar-promotion button a,
 .topBar button a {
     text-decoration: none;
@@ -357,19 +383,22 @@ hr {
     font-size: 32px;
     float: left;
 }
+
 .topBar-promotion button a:hover,
-.topBar button a:hover{
+.topBar button a:hover {
     text-decoration: underline;
 }
+
 /*button*/
 .promotion-ad button,
 .candle-column button,
-.soap-column button{
+.soap-column button {
     width: 100px;
     height: 25px;
     border: 1px solid #2E493A;
-    background-color:#fbf9f5;
+    background-color: #fbf9f5;
 }
+
 .promotion-ad button a,
 .candle-column button a,
 .soap-column button a {
@@ -377,34 +406,39 @@ hr {
     font-size: 14px;
     color: #2E493A;
 }
+
 .promotion-ad button:hover,
 .candle-column button:hover,
 .soap-column button:hover {
     background-color: #2E493A;
-    color:#FFFBF1;
+    color: #FFFBF1;
 }
+
 .promotion-ad button a:hover,
 .candle-column button a:hover,
 .candle-column button:hover>a,
 .soap-column button a:hover,
-.soap-column button:hover>a{
-    color:#FFFBF1;
+.soap-column button:hover>a {
+    color: #FFFBF1;
 }
+
 /*promotion*/
-.sale-price{
+.sale-price {
     color: red;
 }
-.cross-price{
+
+.cross-price {
     text-decoration: line-through;
 }
 
-.promotion{
+.promotion {
     position: relative;
 }
+
 .promotion-column1,
 .promotion-column2,
 .promotion-column3,
-.promotion-column4{
+.promotion-column4 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -412,84 +446,172 @@ hr {
     margin-top: 50px;
     margin-bottom: 60px;
 }
-.promotion-ad a{
+
+.promotion-ad a {
     text-decoration: none;
     font-family: 'PT Serif', serif;
     font-size: 26px;
     color: #2E493A;
 }
-.promotion-ad{
+
+.promotion-ad {
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
     gap: 15px;
 }
-.promotion-price{
+
+.promotion-price {
     display: flex;
     gap: 5px;
     font-family: 'PT Serif', serif;
     font-size: 14px;
 }
-.promotion-desc{
+
+.promotion-desc {
     width: 300px;
     font-family: 'PT Serif', serif;
     font-size: 14px;
 }
 
-.promotion-ad button a{
+.promotion-ad button a {
     font-family: 'PT Serif', serif;
     font-size: 14px;
 }
-.promotion{
+
+.promotion {
     animation: 4s promotion-easeout infinite;
 }
-.promotion-column1{
+
+.promotion-column1 {
     visibility: hidden;
     animation: 16s promotion-autoplay infinite;
 }
+
 .promotion-column2,
 .promotion-column3,
-.promotion-column4{
+.promotion-column4 {
     visibility: hidden;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     margin: 0;
     animation: 16s promotion-autoplay infinite;
 }
-@keyframes promotion-autoplay{
-    0%{visibility: visible;}
-    25%{visibility: hidden;}
-}
-.promotion-column1{animation-delay: 0s;}
-.promotion-column2{animation-delay: 4s;}
-.promotion-column3{animation-delay: 8s;}
-.promotion-column4{animation-delay: 12s;}
 
-@keyframes promotion-easeout{
-    0%{opacity: 0;}
-    2.5%{opacity: 0.1;}
-    5%{opacity: 0.2;}
-    7.5%{opacity: 0.3;}
-    10%{opacity:0.4;}
-    12.5%{opacity: 0.5;}
-    15%{opacity: 0.6;}
-    17.5%{opacity: 0.7;}
-    20%{opacity: 0.8;}
-    22.5%{opacity: 0.9;}
-    25%{opacity: 1;}
-    77.5%{opacity:1;}
-    80%{opacity: 0.9;}
-    82.5%{opacity:0.8;}
-    85%{opacity: 0.7;}
-    87.5%{opacity: 0.6;}
-    90%{opacity: 0.5;}
-    92.5%{opacity: 0.4;}
-    95%{opacity: 0.3;}
-    97.5%{opacity: 0.2;}
-    100%{opacity: 0.1;}
+@keyframes promotion-autoplay {
+    0% {
+        visibility: visible;
+    }
+
+    25% {
+        visibility: hidden;
+    }
 }
+
+.promotion-column1 {
+    animation-delay: 0s;
+}
+
+.promotion-column2 {
+    animation-delay: 4s;
+}
+
+.promotion-column3 {
+    animation-delay: 8s;
+}
+
+.promotion-column4 {
+    animation-delay: 12s;
+}
+
+@keyframes promotion-easeout {
+    0% {
+        opacity: 0;
+    }
+
+    2.5% {
+        opacity: 0.1;
+    }
+
+    5% {
+        opacity: 0.2;
+    }
+
+    7.5% {
+        opacity: 0.3;
+    }
+
+    10% {
+        opacity: 0.4;
+    }
+
+    12.5% {
+        opacity: 0.5;
+    }
+
+    15% {
+        opacity: 0.6;
+    }
+
+    17.5% {
+        opacity: 0.7;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    22.5% {
+        opacity: 0.9;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    77.5% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.9;
+    }
+
+    82.5% {
+        opacity: 0.8;
+    }
+
+    85% {
+        opacity: 0.7;
+    }
+
+    87.5% {
+        opacity: 0.6;
+    }
+
+    90% {
+        opacity: 0.5;
+    }
+
+    92.5% {
+        opacity: 0.4;
+    }
+
+    95% {
+        opacity: 0.3;
+    }
+
+    97.5% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.1;
+    }
+}
+
 /*best seller*/
 .bestseller {
     display: flex;
@@ -536,6 +658,7 @@ hr {
     padding: 0;
     overflow: hidden;
 }
+
 .nav-bestseller {
     display: flex;
     gap: 30px;
@@ -572,17 +695,18 @@ hr {
     font-family: 'PT Serif', serif;
     color: #2E493A;
 }
+
 .candle-label,
-.soap-label{
+.soap-label {
     font-weight: bold;
 }
+
 .bestseller-container a {
     text-decoration: none;
 }
 
 .bestseller-label:hover,
-.candle-label:hover
-.soap-label:hover {
+.candle-label:hover .soap-label:hover {
     text-decoration: underline;
 }
 
@@ -601,6 +725,7 @@ hr {
 .soap-container a {
     text-decoration: none;
 }
+
 .soap,
 .candle {
     display: flex;
@@ -609,6 +734,7 @@ hr {
     align-items: center;
     gap: 25px;
 }
+
 .soap-column,
 .candle-column {
     display: flex;
@@ -617,14 +743,110 @@ hr {
     align-items: center;
     gap: 10px;
 }
+
 .soap-link,
 .candle-link {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .soap-price,
 .candle-price {
     display: flex;
     gap: 5px;
+}
+
+/*footer*/
+
+
+.site-footer {
+    background-color: rgb(46, 73, 58);
+    padding: 45px 0 5px;
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: horizontal;
+    gap: 60px;
+    margin-left: 12%;
+    margin-bottom: 5%;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none;
+}
+
+.li,
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links li {
+    display: block
+}
+.footer-subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer-subscribe form{
+    display: flex;
+    flex-direction: column;
+
+    }
+
+.footer-subscribe input::placeholder {
+    font-family: 'PT Serif', serif;
+    color: #2E493A;
+    font: 14px;
+}
+
+.footer-subscribe input[type=text] {
+    font-family: 'PT Serif', serif;
+    padding: 5px;
+    color: #2E493A;
+    border: none;
+    border-bottom: 1px solid #2E493A;
+}
+
+.footer-subscribe input[type=submit] {
+    width: 35%;
+    height: 30px;
+    border: none;
+    background-color: #2E493A;
+    color: #FFFBF1;
+    border:1px solid #e6e3de;
+    margin-top: 10px;
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-subscribe input[type=submit]:hover{
+    background-color: #8f744c;
+}
+.subscribe-desc{
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.footer-hr {
+    width: 100%;
 }
