@@ -280,15 +280,90 @@ label:hover,
     cursor: pointer;
 }
 
-.main-image{
-    width: 100%;
-    height: auto;
+.title01{
+    font-family: 'PT Serif', serif;
+    color: white;
+    position: absolute;
+    right: 15%;
+    top: 54%;
+    padding: 10% 10%;
 }
 
-.title01{
-    color: white;
+
+
+.homeMain{
+    background-image: url(RoseApo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.img1{
+    height: 350px;
+    width: 560px;
+    border-radius: 20px;
+}
+
+
+.img2{
+    height: 350px;
+    width: 560px;
+    border-radius: 20px;
+}
+
+.leftsign{
+    height: 30px;
+    width: 30px;
+}
+
+.rightsign{
+    height: 30px;
+    width: 30px;
+}
+
+.image-sliders{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 40px;
+    margin: 5% 10%;
+}
+
+.trending{
     font-family: 'PT Serif', serif;
-    position: absolute;
-    right : 40px;
-    top: 500px;
+    padding: 10px 10%;
+}
+
+.trendingImages{
+    margin: 0% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+.img3{
+    height: 250px;
+    width: 250px;
+    border-radius: 13px;
+}
+
+.img4{
+    height: 250px;
+    width: 250px;
+    border-radius: 13px;
+}
+
+.img5{
+    height: 250px;
+    width: 250px;
+    border-radius: 13px;
+}
+
+.img6{
+    height: 250px;
+    width: 250px;
+    border-radius: 13px;
 }
