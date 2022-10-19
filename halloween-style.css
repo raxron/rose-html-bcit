@@ -282,3 +282,49 @@ label:hover,
     top: 54%;
     padding: 10% 10%;
 }
+
+
+
+
+@keyframes uptoDown {
+    0% {
+        top: 0%;
+    }
+    5% {
+        top: 0%;
+    }
+    10% {
+        top: 0%;
+    }
+    40% {
+        top: 40%;
+    }
+    60% {
+        top: 60%;
+    }
+    65% {
+        top: 65%;
+    }
+    70% {
+        top: -30%;
+    }
+    0% {
+        top: 0%;
+    }
+}
+
+
+
+.movingSpider {
+
+    top: 20%;
+    left: 10%;
+    width: 80px;
+    height: 80px;
+    background-color: aqua;
+    position: absolute;
+    animation-name: uptoDown;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+}
