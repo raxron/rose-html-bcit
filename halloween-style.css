@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Overlock:ital,wght@1,700;1,900&family=PT+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300&display=swap');
+
+html,
+body {
+    width: 100%;
+    margin : 0;
+    scroll-padding-top: 200px;
+}
 
 /*Sign Up Bar*/
 .preheader {
     align-items: center;
     display: flex;
-    background-color: rgb(46, 73, 58);
+    background-color: rgb(40, 0, 58);
     opacity: 0.9;
     height: 25px;
     font-family: 'PT Serif', serif;
     font-size: 14px;
-    color: #FFFBF1;
+    color: #ff8400;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -30,7 +38,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .navLeft {
@@ -60,8 +68,8 @@
     flex-direction: row;
     align-items: center;
     text-decoration: none;
-    font-family: 'Overlock', cursive;
-    color: black;
+    font-family: 'Creepster';
+    color: #63c328;
     font-size: 34px;
 }
 
@@ -83,8 +91,8 @@
     color: black;
     text-decoration: none;
 }
-/*user login form*/
 
+/*user login form*/
 .user-content form{
     display: flex;
     flex-direction: column;
