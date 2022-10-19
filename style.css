@@ -298,27 +298,84 @@ label:hover,
     background-size: cover;
 }
 
-.img1{
-    height: 350px;
-    width: 560px;
-    border-radius: 20px;
+.main-gallery-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 45px 20px;
+}
+
+.main-gallery{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    display: block;
+    width: 530px;
+    height: 340px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 8%;
+}
+
+.main-buttons{
+    display: flex;
+    gap: 30px;
+}
+
+.main-buttons-two{
+    display: flex;
+    gap: 30px;
 }
 
 
-.img2{
-    height: 350px;
-    width: 560px;
-    border-radius: 20px;
+.main-buttons a {
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2E493A;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    opacity: 0.2;
 }
 
-.leftsign{
-    height: 30px;
-    width: 30px;
+.main-buttons-two a {
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2E493A;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    opacity: 0.2;
 }
 
-.rightsign{
-    height: 30px;
-    width: 30px;
+.main-buttons a:hover {
+    opacity: 1;
+
+}
+
+.main-buttons-two a:hover {
+    opacity: 1;
+
+}
+
+.arrow{
+    height: 20px;
+    width: 20px;
 }
 
 .image-sliders{
