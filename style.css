@@ -426,42 +426,115 @@ label:hover,
     border-radius: 13px;
 }
 
-.site-footer{
-  background-color:rgb(46, 73, 58);
-  padding:45px 0 5px;
-  font-family:'PT Serif', serif;
-  font-size:16px;
-  color:white;
+/*footer*/
+
+
+.site-footer {
+    background-color: rgb(46, 73, 58);
+    padding: 45px 0 5px;
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    color: white;
 }
 
-.container{
-    display : flex;
-    justify-content: horizontal;
+.footer-container {
+    display: flex;
+    justify-content: center;
     gap: 60px;
-    margin-left: 12%;
+    margin-left: 0;
     margin-bottom: 5%;
 }
-.footer-links
-{
-  padding-left:0;
-  list-style:none;
+
+.footer-links {
+    padding-left: 0;
+    list-style: none;
 }
 
-.li, a{
-  color: white;
-  text-decoration : none;
-}
-.footer-links li
-{
-  display:block
+.li,
+a {
+    color: white;
+    text-decoration: none;
 }
 
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
+.footer-links li {
+    display: block
 }
-.footer-links.inline li
-{
-  display:inline-block
+.footer-subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer-subscribe form{
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+    }
+
+.footer-subscribe input::placeholder {
+    font-family: 'PT Serif', serif;
+    color: #2E493A;
+    font: 14px;
+}
+
+.footer-subscribe input[type=text] {
+    font-family: 'PT Serif', serif;
+    padding: 5px;
+    color: #2E493A;
+    border: none;
+    border-bottom: 1px solid #2E493A;
+}
+
+.footer-subscribe input[type=submit] {
+    width: 35%;
+    height: 30px;
+    border: none;
+    background-color: #2E493A;
+    color: #FFFBF1;
+    border:1px solid #e6e3de;
+    margin-top: 10px;
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-subscribe input[type=submit]:hover{
+    background-color: #8f744c;
+}
+.subscribe-desc{
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover,
+.footer-location a:hover,
+.footer-logo i:hover {
+    color: #8f744c;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.footer-hr {
+    width: 100%;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-left: 0;
+
+}
+.footer-logo{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+.footer-location address{
+    opacity: 0.8;
+    font-size: 13px;
 }
