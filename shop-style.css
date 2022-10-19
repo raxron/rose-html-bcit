@@ -770,9 +770,10 @@ hr {
 
 .footer-container {
     display: flex;
-    justify-content: horizontal;
+    justify-content: center;
+
     gap: 60px;
-    margin-left: 12%;
+    margin-left: 0;
     margin-bottom: 5%;
 }
 
