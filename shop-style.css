@@ -296,7 +296,6 @@ label:hover,
 .nav-title {
     display: inline-flex;
     width: 100%;
-    padding-left: 40px;
     padding-right: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -309,16 +308,23 @@ label:hover,
     margin-left: 50px;
 }
 
-.nav-title a {
+.nav-title a:first-child {
     font-family: 'PT Serif', serif;
     font-size: 13px;
     text-decoration: none;
     color: #2E493A;
     width: 50px;
     border-right: 1px solid #e6e3de;
+    padding-left: 40px;
 }
 
 .nav-title a:last-child {
+    font-family: 'PT Serif', serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #2E493A;
+    width: 50px;
+    border-right: 1px solid #e6e3de;
     border-right: 0;
 }
 
