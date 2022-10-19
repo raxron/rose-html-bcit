@@ -771,7 +771,6 @@ hr {
 .footer-container {
     display: flex;
     justify-content: center;
-
     gap: 60px;
     margin-left: 0;
     margin-bottom: 5%;
@@ -850,4 +849,15 @@ a {
 
 .footer-hr {
     width: 100%;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-left: 0;
+}
+.footer-logo{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
 }
