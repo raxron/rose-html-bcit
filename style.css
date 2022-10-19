@@ -2,6 +2,7 @@
 html,
 body {
     width: 100%;
+    margin : 0;
     scroll-padding-top: 200px;
 }
 
