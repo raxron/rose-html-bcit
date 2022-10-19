@@ -2,7 +2,7 @@
 html,
 body {
     width: 100%;
-    margin: 0 10px 10px 0;
+    margin: 0 10px 0;
     scroll-padding-top: 200px;
 }
 
@@ -340,6 +340,7 @@ label:hover,
     justify-content: center;
     align-items: center;
     gap: 30px;
+    padding-bottom : 5%;
 }
 
 
@@ -366,4 +367,44 @@ label:hover,
     height: 250px;
     width: 250px;
     border-radius: 13px;
+}
+
+.site-footer{
+  background-color:rgb(46, 73, 58);
+  padding:45px 0 5px;
+  font-family:'PT Serif', serif;
+  font-size:16px;
+  color:white;
+}
+
+.container{
+    display : flex;
+    justify-content: horizontal;
+    gap: 60px;
+    margin-left: 12%;
+    margin-bottom: 5%;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none;
+}
+
+.li, a{
+  color: white;
+  text-decoration : none;
+}
+.footer-links li
+{
+  display:block
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
 }
