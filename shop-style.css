@@ -642,6 +642,7 @@ hr {
     padding-bottom: 50px;
     cursor: pointer;
 }
+
 .gallery-container li:hover{
     width: 250%;
  transition: all 0.5s ease-in-out;
@@ -751,7 +752,12 @@ cursor: pointer;
 .soap-label:hover {
     text-decoration: underline;
 }
-
+.soap-column:hover .soap-link img,
+.soap-link img:hover,
+.candle-column:hover .candle-link img,
+.candle-link img:hover{
+box-shadow:0 5px 5px #8f744c;
+}
 
 /*footer*/
 
