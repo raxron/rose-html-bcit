@@ -369,7 +369,7 @@ label:hover,
     font-family: 'PT Serif', bold;
 }
 
- .halloween-collection-description {
+.halloween-collection-description {
     font-family: 'PT Serif', serif;
     color: rgb(211, 211, 211);
     position: absolute;
@@ -380,12 +380,12 @@ label:hover,
     background-origin: padding-box;
     width: 20%;
     height: 34%;
-    
- }
+
+}
+
 .promotion-big-picture {
     display: flex;
     margin-top: 30px
-
 }
 
 /* Footer */
@@ -510,19 +510,19 @@ a {
     0% {
         background-color: yellow;
     }
+
     33% {
         background-color: orange;
     }
+
     66% {
         background-color: red;
     }
+
     99% {
         background-color: orange;
     }
 }
-
-
-
 
 
 .pumpkinLights {
