@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Overlock:ital,wght@1,700;1,900&family=PT+Serif:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300&display=swap');
 
 html,
 body {
     width: 100%;
-    margin : 0;
+    margin: 0;
     scroll-padding-top: 200px;
+    background-color: #d8862e;
 }
 
 /*Sign Up Bar*/
@@ -55,21 +55,23 @@ body {
     color: black;
 }
 
-.navMid{
+.navMid {
     flex: 1;
     width: auto;
     display: flex;
     align-items: center;
 }
-.navMid a{
+
+.navMid a {
     flex: 1;
     width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     text-decoration: none;
-    font-family: 'Creepster';
-    color: #63c328;
+    font-family: 'PT Serif', serif;
+    color: rgb(40, 0, 58);
+    margin-left: 10px;
     font-size: 34px;
 }
 
@@ -93,7 +95,7 @@ body {
 }
 
 /*user login form*/
-.user-content form{
+.user-content form {
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -101,21 +103,25 @@ body {
     margin-top: 20px;
     gap: 5px;
 }
-.user-content input::placeholder{
+
+.user-content input::placeholder {
     color: #2E493A;
     font-family: 'PT Serif', serif;
     font: 14px;
 }
-.user-content input[type=text]{
+
+.user-content input[type=text] {
     font-family: 'PT Serif', serif;
     padding: 5px;
     color: #2E493A;
 }
-.user-content input[type=password]{
+
+.user-content input[type=password] {
     padding: 5px;
     margin-bottom: 10px;
 }
-.user-content input[type=submit]{
+
+.user-content input[type=submit] {
     width: 100%;
     height: 20px;
     border: none;
@@ -127,12 +133,14 @@ body {
     font-size: 14px;
     cursor: pointer;
 }
-.user-term{
+
+.user-term {
     font-family: 'PT Serif', serif;
     font-size: 12px;
     margin-left: 40px;
     margin-right: 40px;
 }
+
 /**/
 
 .shop-dropdown,
@@ -143,10 +151,12 @@ body {
     overflow: hidden;
 
 }
-.user-dropdown{
-    float:right;
+
+.user-dropdown {
+    float: right;
     overflow: hidden;
 }
+
 .shop-content,
 .special-content,
 .about-content,
@@ -159,7 +169,8 @@ body {
     z-index: 1;
 
 }
-.user-content{
+
+.user-content {
     display: none;
     position: absolute;
     background-color: #FFFBF1;
@@ -167,6 +178,7 @@ body {
     right: 0;
     z-index: 1;
 }
+
 .shop-column,
 .special-column,
 .about-column,
@@ -282,7 +294,7 @@ label:hover,
     cursor: pointer;
 }
 
-.title01{
+.title01 {
     font-family: 'PT Serif', serif;
     color: white;
     position: absolute;
@@ -294,28 +306,37 @@ label:hover,
 
 
 
+
+/* Spider aimation*/
 @keyframes uptoDown {
     0% {
         top: 0%;
     }
+
     5% {
         top: 0%;
     }
+
     10% {
         top: 0%;
     }
+
     40% {
         top: 40%;
     }
+
     60% {
         top: 60%;
     }
+
     65% {
         top: 65%;
     }
+
     70% {
         top: -30%;
     }
+
     0% {
         top: 0%;
     }
@@ -333,6 +354,156 @@ label:hover,
     position: absolute;
     animation-name: uptoDown;
     animation-duration: 15s;
-    animation-iteration-count: infinite;
+}
 
+
+/*Main body content */
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.picture {
+    
+}
+
+.h1 {
+    font-family: 'PT Serif', bold;
+}
+
+ .halloween-collection-description {
+    font-family: 'PT Serif', serif;
+    color: rgb(211, 211, 211);
+    position: absolute;
+    right: 55%;
+    top: 20%;
+    padding: 2% 2%;
+    background-color: rgba(122, 71, 50, 0.9);
+    background-origin: padding-box;
+    width: 20%;
+    height: 34%;
+    
+ }
+.promotion-big-picture {
+    display: flex;
+    margin-top: 30px
+
+}
+
+/* Footer */
+.site-footer {
+    background-color: rgb(46, 73, 58);
+    padding: 45px 0 5px;
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    color: #ff8400;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-left: 0;
+    margin-bottom: 5%;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none;
+}
+
+.li,
+a {
+    color: #ff8400;
+    text-decoration: none;
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-subscribe form {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+}
+
+.footer-subscribe input::placeholder {
+    font-family: 'PT Serif', serif;
+    color: #2E493A;
+    font: 14px;
+}
+
+.footer-subscribe input[type=text] {
+    font-family: 'PT Serif', serif;
+    padding: 5px;
+    color: #2E493A;
+    border: none;
+    border-bottom: 1px solid #2E493A;
+}
+
+.footer-subscribe input[type=submit] {
+    width: 35%;
+    height: 30px;
+    border: none;
+    background-color: #2E493A;
+    color: #FFFBF1;
+    border: 1px solid #e6e3de;
+    margin-top: 10px;
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-subscribe input[type=submit]:hover {
+    background-color: #8f744c;
+}
+
+.subscribe-desc {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover,
+.footer-location a:hover,
+.footer-logo i:hover {
+    color: #8f744c;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.footer-hr {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-left: 0;
+
+}
+
+.footer-logo {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.footer-location address {
+    opacity: 0.8;
+    font-size: 13px;
 }
