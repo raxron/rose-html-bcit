@@ -364,9 +364,6 @@ label:hover,
     justify-content: center;
 }
 
-.picture {
-    
-}
 
 .h1 {
     font-family: 'PT Serif', bold;
@@ -506,4 +503,38 @@ a {
 .footer-location address {
     opacity: 0.8;
     font-size: 13px;
+}
+
+
+@keyframes flicker {
+    0% {
+        background-color: yellow;
+    }
+    33% {
+        background-color: orange;
+    }
+    66% {
+        background-color: red;
+    }
+    99% {
+        background-color: orange;
+    }
+}
+
+
+
+
+
+.pumpkinLights {
+
+    bottom: 10%;
+    left: 10%;
+    width: 130px;
+    height: 80px;
+    position: absolute;
+    background-color: yellow;
+    animation-name: flicker;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
 }
