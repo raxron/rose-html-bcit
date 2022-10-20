@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Overlock:ital,wght@1,700;1,900&family=PT+Serif:ital@0;1&display=swap');
 html,
 body {
+    outline: 1px solid red;
     width: 100%;
-    margin : 0;
-    scroll-padding-top: 200px;
+    margin:0;
+    scroll-padding-top: 210px;
+}
+img{
+    object-fit: cover;
 }
 
 /*Sign Up Bar*/
 .preheader {
+    min-width: none;
     align-items: center;
     display: flex;
-    background-color: rgb(46, 73, 58);
-    opacity: 0.9;
+    background-color: #2E493A;
     height: 25px;
     font-family: 'PT Serif', serif;
     font-size: 14px;
@@ -29,110 +33,62 @@ body {
 /*navigation*/
 .navBar {
     background-color: #FFFBF1;
-    align-items: center;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     height: 100px;
     width: 100%;
-    position: sticky;
     top: 0;
+    position: sticky;
     z-index: 1;
     color: black;
 }
 
 .navLeft {
-    font-family: 'PT Serif', serif;
-    flex: 1;
     width: auto;
-    display: flex;
+    display: inherit;
+    align-items: flex-start;
     width: auto;
     gap: 20px;
-    margin: 40px;
-    padding-top: 40px;
-    font-size: 14px;
+    padding-left: 40px;
+    padding-top: 20px;
     font-family: 'PT Serif', serif;
+    font-size: 14px;
     color: black;
 }
 
-.navMid{
-    flex: 1;
+.navMid {
     width: auto;
-    display: flex;
-    align-items: center;
+    display: inherit;
 }
-.navMid a{
-    flex: 1;
+
+.navMid a {
     width: auto;
-    display: flex;
+    display: inherit;
     flex-direction: row;
     align-items: center;
     text-decoration: none;
     font-family: 'Overlock', cursive;
     color: black;
     font-size: 34px;
+    padding-bottom: 40px; ;
 }
-
-
 .navRight {
-    font-family: 'PT Serif', serif;
     display: flex;
     width: auto;
     align-items: flex-end;
     gap: 20px;
-    margin: 40px;
-    padding-top: 30px;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+.navRight a {
     font-family: 'PT Serif', serif;
     color: black;
     font-size: 14px;
-}
-
-.navRight a {
-    color: black;
     text-decoration: none;
 }
-/*user login form*/
-
-.user-content form{
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    margin-left: 40px;
-    margin-top: 20px;
-    gap: 5px;
-}
-.user-content input::placeholder{
-    color: #2E493A;
-    font-family: 'PT Serif', serif;
-    font: 14px;
-}
-.user-content input[type=text]{
-    font-family: 'PT Serif', serif;
-    padding: 5px;
-    color: #2E493A;
-}
-.user-content input[type=password]{
-    padding: 5px;
-    margin-bottom: 10px;
-}
-.user-content input[type=submit]{
-    width: 100%;
-    height: 20px;
-    border: none;
-    border-radius: 3px;
-    background-color: #2E493A;
-    color: #FFFBF1;
-    margin-bottom: 10px;
-    font-family: 'PT Serif', serif;
-    font-size: 14px;
-    cursor: pointer;
-}
-.user-term{
-    font-family: 'PT Serif', serif;
-    font-size: 12px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-/**/
-
+/*nav-left-dropdown*/
 .shop-dropdown,
 .special-dropdown,
 .about-dropdown,
@@ -141,10 +97,7 @@ body {
     overflow: hidden;
 
 }
-.user-dropdown{
-    float:right;
-    overflow: hidden;
-}
+
 .shop-content,
 .special-content,
 .about-content,
@@ -155,15 +108,6 @@ body {
     width: 100%;
     left: 0;
     z-index: 1;
-
-}
-.user-content{
-    display: none;
-    position: absolute;
-    background-color: #FFFBF1;
-    width: 280px;
-    right: 0;
-    z-index: 1;
 }
 .shop-column,
 .special-column,
@@ -173,6 +117,7 @@ body {
     padding-left: 30px;
     margin: 30px 10px 10px 10px;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .shop-column a,
@@ -187,8 +132,70 @@ body {
     color: #8f744c;
     font-size: 14px;
     padding-bottom: 10px;
+}
+/*user-dropdown*/
+.user-dropdown {
+    float: right;
+    overflow: hidden;
+}
+.user-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFBF1;
+    width: 280px;
+    right: 0;
+    z-index: 1;
+}
+
+.user-content form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.user-content input::placeholder {
+    font-family: 'PT Serif', serif;
+    color: #2E493A;
+    font: 14px;
+}
+
+.user-content input[type=text] {
+    font-family: 'PT Serif', serif;
+    padding: 5px;
+    color: #2E493A;
+}
+
+.user-content input[type=password] {
+    font-family: 'PT Serif', serif;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.user-content input[type=submit] {
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #2E493A;
+    color: #FFFBF1;
+    margin-bottom: 10px;
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
     cursor: pointer;
 }
+
+.user-term {
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/*dropdown-hover*/
 
 .shop-dropdown:hover .shop-content,
 .special-dropdown:hover .special-content,
@@ -213,6 +220,7 @@ label:hover,
 .special-column:hover,
 .about-column:hover,
 .support-column:hover {
+    text-decoration: underline 1px;
     font-weight: bold;
 }
 
@@ -222,7 +230,7 @@ label:hover,
 }
 
 .search-hover {
-    position: absolute;
+position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
@@ -267,6 +275,7 @@ label:hover,
 }
 
 ::placeholder {
+    font-family: 'PT Serif', serif;
     color: #FFFBF1;
 }
 
@@ -300,6 +309,7 @@ label:hover,
 
 .main-gallery-container{
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -394,6 +404,7 @@ label:hover,
 .trendingImages{
     margin: 0% 5%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -440,6 +451,7 @@ label:hover,
 .footer-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 60px;
     margin-left: 0;
     margin-bottom: 5%;
@@ -518,9 +530,6 @@ a {
     display: inline-block
 }
 
-.footer-hr {
-    width: 100%;
-}
 .row{
     display: flex;
     justify-content: center;
