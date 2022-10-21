@@ -402,12 +402,12 @@ position: absolute;
 }
 
 .trendingImages{
-    margin: 0% 5%;
+    margin: 0% 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     padding-bottom : 5%;
 }
 
