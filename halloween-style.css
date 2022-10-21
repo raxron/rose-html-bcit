@@ -10,14 +10,15 @@ body {
 
 /*Sign Up Bar*/
 .preheader {
+    color: #ff8400;
+    min-width: none;
     align-items: center;
     display: flex;
-    background-color: rgb(40, 0, 58);
-    opacity: 0.9;
+    background-color: #2E493A;
     height: 25px;
     font-family: 'PT Serif', serif;
     font-size: 14px;
-    color: #ff8400;
+    color: #FFFBF1;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -31,72 +32,78 @@ body {
 /*navigation*/
 .navBar {
     background-color: #FFFBF1;
-    align-items: center;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     height: 100px;
     width: 100%;
-    position: sticky;
     top: 0;
+    position: sticky;
     z-index: 1;
-    color: rgb(0, 0, 0);
-}
+    color: black;}
 
 .navLeft {
-    font-family: 'PT Serif', serif;
-    flex: 1;
     width: auto;
-    display: flex;
+    display: inherit;
+    align-items: flex-start;
     width: auto;
     gap: 20px;
-    margin: 40px;
-    padding-top: 40px;
-    font-size: 14px;
+    padding-left: 40px;
+    padding-top: 20px;
     font-family: 'PT Serif', serif;
+    font-size: 14px;
     color: black;
 }
 
 .navMid {
-    flex: 1;
     width: auto;
-    display: flex;
-    align-items: center;
+    display: inherit;
 }
 
 .navMid a {
-    flex: 1;
     width: auto;
-    display: flex;
+    display: inherit;
     flex-direction: row;
     align-items: center;
     text-decoration: none;
-    font-family: 'PT Serif', serif;
-    color: rgb(40, 0, 58);
-    margin-left: 10px;
+    font-family: 'Overlock', cursive;
+    color: black;
     font-size: 34px;
+    padding-bottom: 40px; ;
 }
 
 
 .navRight {
-    font-family: 'PT Serif', serif;
     display: flex;
     width: auto;
     align-items: flex-end;
     gap: 20px;
-    margin: 40px;
-    padding-top: 30px;
+    padding-right: 40px;
+    padding-top: 20px;}
+
+.navRight a {
     font-family: 'PT Serif', serif;
     color: black;
     font-size: 14px;
-}
-
-.navRight a {
-    color: black;
-    text-decoration: none;
-}
+    text-decoration: none;}
 
 /*user login form*/
+.user-dropdown {
+    float: right;
+    overflow: hidden;
+}
+.user-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFBF1;
+    width: 280px;
+    right: 0;
+    z-index: 1;
+}
 .user-content form {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 200px;
     margin-left: 40px;
@@ -123,7 +130,7 @@ body {
 
 .user-content input[type=submit] {
     width: 100%;
-    height: 20px;
+    height: 30px;
     border: none;
     border-radius: 3px;
     background-color: #2E493A;
@@ -139,6 +146,11 @@ body {
     font-size: 12px;
     margin-left: 40px;
     margin-right: 40px;
+}
+.user-term-a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /**/
@@ -361,6 +373,10 @@ hr {
 }
 
 /** Text inside big picture **/
+.promotion-big-picture img{
+    width: 100%;
+    height: auto;
+}
 .halloween-collection-description {
     font-family: 'PT Serif', serif;
     color: rgb(211, 211, 211);
@@ -378,7 +394,28 @@ hr {
     display: flex;
     margin-top: 30px
 }
+/*content start here*/
+.limited-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 
+    justify-content: center;
+    padding-left: 14%;
+    padding-bottom: 50px;
+}
+/* content titles and buttons on top of each section */
+.topBar{
+    width: 68%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 15%;
+}
 .topBar button {
     background-color: #2E493A;
     border: none;
@@ -386,12 +423,6 @@ hr {
     height: 30px;
     border-radius: 5px;
     float: right
-}
-
-.topBar {
-    position: inherit;
-    padding-bottom: 50px;
-    padding-top: 50px;
 }
 
 .topBar button a {
@@ -407,99 +438,94 @@ hr {
     float: left;
 }
 
-.topBar button a:hover {
+.topBar-promotion button a:hover,
+.topBar button:hover {
     text-decoration: underline;
 }
-
-.product-column button {
-    width: 100px;
-    height: 25px;
-    border: 1px solid #2E493A;
-    background-color: #fbf9f5;
+.topBar-promotion button:hover,
+.topBar button:hover{
+    background-color: #8f744c;
+}
+/*limited product content*/
+.limited-link img{
+    width:100%;
+    max-width:400px;
+     max-height:250px;
 }
 
-.product-column button a {
-    font-family: 'PT Serif', serif;
-    font-size: 14px;
-    color: #2E493A;
-}
-
-
-.product-column button:hover {
-    background-color: #2E493A;
-    color: #FFFBF1;
-}
-
-.product-column button a:hover,
-.product-column button:hover>a {
-    color: #FFFBF1;
-}
-
-.limited-products-container {
+.limited-container {
+    width: 80%;
     display: flex;
-    align-items: center;
-    justify-items: center;
     flex-direction: column;
     gap: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    padding-left: 15%;
 }
-
-
-.product-label,
-.product-price {
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'PT Serif', serif;
-    color: #2E493A;
-}
-
-.product-label {
-    font-weight: bold;
-}
-
-.product-label:hover {
-    text-decoration: underline;
-}
-
-.product-column img:hover {
-    box-shadow: 5px 5px 5px gray;
-    opacity: 1;
-}
-
-.limited-products-container a {
-    text-decoration: none;
-}
-
-.product {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.limited {
+    display: inherit;
+    flex-wrap: wrap;
     gap: 25px;
 }
 
-.product-column {
+.limited-column {
     display: flex;
+    width: 20%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 
-.product-link {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.product-price {
+.limited-price {
     display: flex;
     gap: 5px;
 }
 
+
+.limited-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    gap: 10px;
+}
+.limited-column a{
+    text-decoration: none;
+}
+.limited-link {
+    display: inherit;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.limited-price {
+    display: flex;
+    gap: 5px;
+}
+.limited-label,
+.limited-price {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'PT Serif', serif;
+    color: #2E493A;
+}
+
+.limited-label {
+    font-weight: bold;
+}
+
+.limited-column:hover .soap-label,
+.limited-label:hover {
+    text-decoration: underline;
+}
+.limited-column:hover .limited-link img,
+.limited-link img:hoverr{
+box-shadow:0 5px 5px #8f744c;
+}
 /* Footer */
 .site-footer {
     background-color: rgb(46, 73, 58);
@@ -511,6 +537,7 @@ hr {
 
 .footer-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 60px;
     margin-left: 0;
@@ -572,7 +599,7 @@ a {
 }
 
 .footer-subscribe input[type=submit]:hover {
-    background-color: #8f744c;
+    background-color: #d8862e;
 }
 
 .subscribe-desc {
