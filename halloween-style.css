@@ -306,7 +306,9 @@ label:hover,
     cursor: pointer;
 }
 
-/*Main body content */
+/* Main body content */
+
+/* Animations */
 
 /* Spider aimation*/
 @keyframes uptoDown {
@@ -338,14 +340,11 @@ label:hover,
         top: -30%;
     }
 
-    0% {
-        top: 0%;
-    }
 }
 
 .movingSpider {
 
-    top: 20%;
+    top: 2%;
     left: 10%;
     width: 80px;
     height: 80px;
@@ -353,7 +352,49 @@ label:hover,
     position: absolute;
     animation-name: uptoDown;
     animation-duration: 15s;
+    animation-iteration-count: infinite;
 }
+
+/* PumpkinAnimation */
+
+@keyframes flicker {
+    0% {
+        background-color: yellow;
+    }
+
+    33% {
+        background-color: orange;
+    }
+
+    66% {
+        background-color: red;
+    }
+
+    99% {
+        background-color: orange;
+    }
+}
+
+
+.pumpkinLights {
+
+    bottom: -35%;
+    left: 10%;
+    width: 130px;
+    height: 80px;
+    position: absolute;
+    background-color: yellow;
+    animation-name: flicker;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+}
+
+.movingBats [
+    
+]
+
+/** End of Animations List */
 
 .main-content {
     display: flex;
@@ -645,35 +686,3 @@ a {
 }
 
 
-@keyframes flicker {
-    0% {
-        background-color: yellow;
-    }
-
-    33% {
-        background-color: orange;
-    }
-
-    66% {
-        background-color: red;
-    }
-
-    99% {
-        background-color: orange;
-    }
-}
-
-
-.pumpkinLights {
-
-    bottom: 10%;
-    left: 10%;
-    width: 130px;
-    height: 80px;
-    position: absolute;
-    background-color: yellow;
-    animation-name: flicker;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-
-}
