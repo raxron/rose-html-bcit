@@ -378,10 +378,10 @@ label:hover,
 
 .pumpkinLights {
 
-    bottom: -35%;
+    bottom: -36%;
     left: 10%;
-    width: 130px;
-    height: 80px;
+    width: 250px;
+    height: 130px;
     position: absolute;
     background-color: yellow;
     animation-name: flicker;
@@ -390,9 +390,41 @@ label:hover,
 
 }
 
-.movingBats [
-    
-]
+@keyframes fly-in{
+    0% {
+        right: -15%;
+        top: 70%;
+    } 
+    20% {
+        right: 10%;
+        top: 50%;
+    }
+    40% {
+        right: 20%;
+        top: 40%;
+    }
+    50% {
+        right: 13%;
+        top: 35%; 
+    }
+    70% {
+        right: 30%;
+        top: 30%;
+    }
+}
+
+
+.movingBats {
+    top: 60%;
+    right: -15%;
+    width: 130px;
+    height: 80px;
+    position: absolute;
+    background-color: yellow;
+    animation-name: fly-in;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
 
 /** End of Animations List */
 
