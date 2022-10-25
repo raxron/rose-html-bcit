@@ -331,7 +331,7 @@ position: absolute;
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding-left: 20%;
+    padding-left: 22%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -771,7 +771,7 @@ box-shadow:0 5px 5px #8f744c;
 
 .site-footer {
     background-color: rgb(46, 73, 58);
-    padding: 45px 0 5px;
+    padding: 45px 0px 5px;
     font-family: 'PT Serif', serif;
     font-size: 16px;
     color: white;
@@ -782,7 +782,7 @@ box-shadow:0 5px 5px #8f744c;
     flex-wrap: wrap;
     justify-content: center;
     gap: 60px;
-    margin-left: 0;
+    margin-left: 5%;
     margin-bottom: 5%;
 }
 .footer-links {
@@ -860,7 +860,7 @@ a {
     display: flex;
     justify-content: center;
     gap: 60px;
-    margin-left: 0;
+    margin-left: 5%;
 
 }
 .footer-logo{
