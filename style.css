@@ -11,6 +11,20 @@ img{
 }
 
 /*Sign Up Bar*/
+.preheader {
+    min-width: none;
+    align-items: center;
+    display: flex;
+    background-color: #2E493A;
+    height: 25px;
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    color: #FFFBF1;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
 .navName {
     background-color: #FFFBF1;
     display: flex;
