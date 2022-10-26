@@ -17,7 +17,7 @@ img{
     display: flex;
     background-color: #2E493A;
     height: 25px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif', serif;
     font-size: 14px;
     color: #FFFBF1;
     justify-content: center;
@@ -53,7 +53,7 @@ img{
     gap: 20px;
     padding-left: 40px;
     padding-top: 20px;
-    font-family: 'Trispace', sans-serif;
+    font-family: 'PT Serif', serif;
     font-size: 14px;
     color: black;
 }
@@ -69,7 +69,7 @@ img{
     flex-direction: row;
     align-items: center;
     text-decoration: none;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Overlock', cursive;
     color: black;
     font-size: 34px;
     padding-bottom: 40px; ;
@@ -83,7 +83,7 @@ img{
     padding-top: 20px;
 }
 .navRight a {
-    font-family: 'Trispace', sans-serif;
+    font-family: 'PT Serif', serif;
     color: black;
     font-size: 14px;
     text-decoration: none;
@@ -198,7 +198,6 @@ img{
         flex-direction: row;
         justify-content: space-between;
     }
-
 /*dropdown-hover*/
 
 .shop-dropdown:hover .shop-content,
@@ -291,6 +290,38 @@ position: absolute;
     background-color: #FFFBF1;
     opacity: 0.7;
     cursor: pointer;
+}
+/* navgation bar:home/shop/candles...*/
+.nav-title {
+    background-color: #FFFBF1;
+    border-top: 1px solid #e6e3de;
+    border-bottom: 1px solid #e6e3de;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-title a:first-child {
+    font-family: 'PT Serif', serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #2E493A;
+    width: 50px;
+    border-right: 1px solid #e6e3de;
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+.nav-title a:last-child {
+    font-family: 'PT Serif', serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #2E493A;
+    width: 50px;
+    padding-left: 10px;
+    border-right: 0;
+}
+.nav-title a:hover {
+    text-decoration: underline #8f744c;
 }
 
 .homeMain{
