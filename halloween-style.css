@@ -466,12 +466,43 @@ label:hover,
 }
 
 
-.movingBats {
+.batOne {
     top: 60%;
     right: -15%;
     position: absolute;
-    box-shadow: black;
     animation-name: fly-in;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fly-in2{
+    0% {
+        right: -15%;
+        top: 80%;
+    } 
+    20% {
+        right: 10%;
+        top: 60%;
+    }
+    40% {
+        right: 20%;
+        top: 50%;
+    }
+    50% {
+        right: 13%;
+        top: 45%; 
+    }
+    70% {
+        right: 30%;
+        top: 40%;
+    }
+}
+
+.batTwo {
+    top: 85%;
+    right: -15%;
+    position: absolute;
+    animation-name: fly-in2;
     animation-duration: 7s;
     animation-iteration-count: infinite;
 }
@@ -620,10 +651,16 @@ hr {
 .limited-column:hover .soap-label,
 .limited-label:hover {
     text-decoration: underline;
+    
 }
 .limited-column:hover .limited-link img,
-.limited-link img:hoverr{
-box-shadow:0 5px 5px #8f744c;
+.limited-link img:hover{
+box-shadow:0 5px 5px #040404;
+border-radius: 10px;
+}
+
+.limited-link img {
+    border-radius: 10px;
 }
 
 .limited-column button {
