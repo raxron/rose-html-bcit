@@ -359,10 +359,13 @@ label:hover,
 
 /* Animations */
 
+
+
+
 /* Spider aimation*/
 @keyframes uptoDown {
     0% {
-        top: 0%;
+        top: -30%;
     }
 
     5% {
@@ -385,7 +388,10 @@ label:hover,
         top: 65%;
     }
 
-    70% {
+    85% {
+        top: -45%;
+    }
+    100% {
         top: -30%;
     }
 
@@ -394,10 +400,7 @@ label:hover,
 .movingSpider {
 
     top: 2%;
-    left: 10%;
-    width: 80px;
-    height: 80px;
-    background-color: aqua;
+    left: 5%;
     position: absolute;
     animation-name: uptoDown;
     animation-duration: 15s;
@@ -466,10 +469,8 @@ label:hover,
 .movingBats {
     top: 60%;
     right: -15%;
-    width: 130px;
-    height: 80px;
     position: absolute;
-    background-color: yellow;
+    box-shadow: black;
     animation-name: fly-in;
     animation-duration: 7s;
     animation-iteration-count: infinite;
