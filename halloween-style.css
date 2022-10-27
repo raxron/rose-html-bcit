@@ -7,7 +7,7 @@ body {
     width: 100%;
     margin: 0;
     scroll-padding-top: 200px;
-    background-color: #d8862e;
+    background-color: #d8862e; 
 }
 
 /*Sign Up Bar*/
@@ -398,7 +398,7 @@ label:hover,
 }
 
 .movingSpider {
-
+    z-index: 1;
     top: 2%;
     left: 5%;
     position: absolute;
