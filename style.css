@@ -4,7 +4,7 @@ html,
 body {
     width: 100%;
     margin:0;
-    scroll-padding-top: 110px;
+    scroll-padding-top: 150px;
 }
 img{
     object-fit: cover;
