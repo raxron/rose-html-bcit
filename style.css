@@ -24,7 +24,10 @@ img{
     margin: 0;
     padding: 0;
 }
-
+.close {
+    position: absolute;
+    right: 10px;
+}
 
 /*navigation*/
 

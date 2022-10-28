@@ -9,8 +9,24 @@ body {
 img {
     object-fit: cover;
 }
-
-
+/*Sign Up Bar*/
+.preheader {
+    min-width: none;
+    align-items: center;
+    display: flex;
+    background-color: #2E493A;
+    height: 25px;
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    color: #FFFBF1;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.close {
+    position: absolute;
+    right: 10px;
+}
 /*navigation*/
 
 .navName {
