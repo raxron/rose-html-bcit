@@ -318,8 +318,7 @@ label:hover,
 
 
 .homeMain{
-    max-height: 100vh;
-    height: 80vh;
+    height: 800px;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(roseapo.jpg);
     background-position: center;
@@ -404,11 +403,11 @@ label:hover,
     top: 0;
     left:0;
     padding-top: 55%;
-    transition: 0.5s;
 }
 
 .colImage:hover{
     background:rgb(46, 73, 58, 0.5);
+    transition: 0.5s;
 }
 
 h2{
