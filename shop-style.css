@@ -476,18 +476,25 @@ hr {
 
 .promotion {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-left: 4%;
+    margin-right: 4%;
+    gap: 50px;
 }
 
 .promotion-column1,
 .promotion-column2,
 .promotion-column3,
 .promotion-column4 {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    gap: 100px;
 }
 
 .promotion-ad a {
@@ -538,7 +545,6 @@ hr {
     visibility: hidden;
     position: absolute;
     top: 0;
-
     margin: 0;
     animation: 16s promotion-autoplay infinite;
 }
@@ -716,24 +722,29 @@ hr {
 /*candles+soaps*/
 .candle-link img,
 .soap-link img {
-    max-width: 400px;
-    max-height: 250px;
+    max-width: 380px;
+    max-height: 380px;
 }
 
 .candle-container,
 .soap-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 30px;
     padding-bottom: 50px;
-    padding-left: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .soap,
 .candle {
-    display: inherit;
-    flex-wrap: wrap;
-    gap: 25px;
+    display: flex;
+    width: 100%;
+   
+    gap: 50px;
 }
 
 .soap-column,
@@ -810,7 +821,9 @@ hr {
 .soap-link img:hover,
 .candle-column:hover .candle-link img,
 .candle-link img:hover {
-    box-shadow: 0 5px 5px #8f744c;
+    box-shadow: 0 5px 5px #e6e3de;
+    transition-delay: 0.1s;
+    transition: ease-in-out;
 }
 
 /*footer*/
@@ -818,7 +831,7 @@ hr {
 
 .site-footer {
     background-color: rgb(46, 73, 58);
-    padding: 45px 0px 5px;
+    padding-top: 2%;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: white;
@@ -912,9 +925,7 @@ a {
 .row {
     display: flex;
     justify-content: center;
-    gap: 60px;
-    margin-left: 5%;
-
+    gap: 60px;                              
 }
 
 .footer-logo {
