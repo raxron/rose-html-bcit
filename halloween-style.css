@@ -429,7 +429,7 @@ label:hover,
     }
 
     66% {
-        background-color: red;
+        background-color: rgb(250, 76, 7);
     }
 
     99% {
@@ -440,16 +440,39 @@ label:hover,
 
 .pumpkinLights {
 
-    bottom: -36%;
-    left: 10%;
-    width: 250px;
+    bottom: -33%;
+    left: 15%;
+    width: 180px;
     height: 130px;
     position: absolute;
     background-color: yellow;
     animation-name: flicker;
-    animation-duration: 7s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 
+}
+
+.pumpkinLights1 {
+
+    bottom: -30%;
+    left: 8%;
+    width: 100px;
+    height: 85px;
+    position: absolute;
+    background-color: yellow;
+    animation-name: flicker;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+.pumpkins {
+    z-index: 1;
+    bottom: -40%;
+    left: 5%;
+    width: 450px;
+    height: 300px;
+    position: absolute;
 }
 
 /* Bat Animations */
