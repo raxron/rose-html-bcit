@@ -357,12 +357,11 @@ label:hover,
 
 /* Main body content */
 
+
+
 /* Animations */
 
-
-
-
-/* Spider aimation*/
+/* Spider Animation*/
 @keyframes uptoDown {
     0% {
         top: -30%;
@@ -407,7 +406,18 @@ label:hover,
     animation-iteration-count: infinite;
 }
 
-/* PumpkinAnimation */
+.movingWeb {
+
+    top: -493%;
+    margin-left: 123px;
+    width: 5px;
+    height: 500%;
+    position: absolute;
+    background-color: #ffffff;
+    
+}
+
+/* Pumpkin Animation */
 
 @keyframes flicker {
     0% {
@@ -441,6 +451,8 @@ label:hover,
     animation-iteration-count: infinite;
 
 }
+
+/* Bat Animations */
 
 @keyframes fly-in{
     0% {
@@ -481,15 +493,15 @@ label:hover,
         top: 80%;
     } 
     20% {
-        right: 10%;
+        right: 5%;
         top: 60%;
     }
     40% {
-        right: 20%;
+        right: 25%;
         top: 50%;
     }
     50% {
-        right: 13%;
+        right: 8%;
         top: 45%; 
     }
     70% {
