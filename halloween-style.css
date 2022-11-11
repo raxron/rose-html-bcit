@@ -561,11 +561,13 @@ hr {
     opacity: 0.5;
 }
 
-/** Text inside big picture **/
+
 .promotion-big-picture img{
     width: 100%;
     height: auto;
 }
+
+/** Text inside big picture **/
 .halloween-collection-description {
     font-family: 'PT Serif', serif;
     color: rgb(255, 255, 255);
@@ -574,9 +576,7 @@ hr {
     top: 30%;
     padding: 2% 2%;
     background-color: rgba(122, 71, 50, 0.9);
-    background-origin: padding-box;
     width: 20%;
-    height: 34%;
 }
 
 
@@ -586,7 +586,6 @@ hr {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-
     justify-content: center;
     padding-left: 14%;
     padding-bottom: 50px;
@@ -600,7 +599,7 @@ hr {
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 15%;
+    padding-left: 12.5%;
 }
 
 .topTitle {
@@ -690,8 +689,9 @@ hr {
 }
 .limited-column:hover .limited-link img,
 .limited-link img:hover{
-box-shadow:0 5px 5px #040404;
-border-radius: 10px;
+    box-shadow: 0 5px 5px #be7c11;
+    transition-delay: 0.1s;
+    transition: ease-in-out;
 }
 
 .limited-link img {
