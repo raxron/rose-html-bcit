@@ -323,7 +323,7 @@ label:hover,
 .homeMain{
     height: 800px;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(roseapo.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(MainImg/roseapo.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -488,33 +488,17 @@ h3, h4{
 
 .trendingImages{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding-top: 20px;
     padding-bottom: 80px;
+    padding-left: 2%;
     gap: 30px;
 }
 
 
-.img3{
+.imgGroup{
     height: 290px;
-    width: 290px;
-    border-radius: 13px;
-}
-
-.img4{
-    height: 290px;
-    width: 290px;
-    border-radius: 13px;
-}
-
-.img5{
-    height: 290px;
-    width: 290px;
-    border-radius: 13px;
-}
-
-.img6{
-    height: 290x;
     width: 290px;
     border-radius: 13px;
 }

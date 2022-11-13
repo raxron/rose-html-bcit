@@ -12,7 +12,6 @@ body {
 
 /*Sign Up Bar*/
 .preheader {
-    color: #ff8400;
     min-width: none;
     align-items: center;
     display: flex;
@@ -25,7 +24,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .close {
     position: absolute;
     right: 10px;
@@ -582,31 +580,30 @@ hr {
 
 /*content start here*/
 .limited-box{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    padding-left: 14%;
+    align-items: center;
     padding-bottom: 50px;
 }
 /* content titles and buttons on top of each section */
 .topBar{
-    width: 68%;
+    width: 53%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 12.5%;
 }
 
 .topTitle {
+    display: inherit;
     font-family: 'Trispace', sans-serif;
     font-size: 32px;
     float: left;
-    padding-left: 37px;
 }
 
 
@@ -618,12 +615,11 @@ hr {
 }
 
 .limited-container {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding-bottom: 50px;
-    padding-left: 15%;
 }
 .limited {
     display: inherit;
@@ -633,7 +629,6 @@ hr {
 
 .limited-column {
     display: flex;
-    width: 20%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
